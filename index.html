@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CLIPX AI — Gaming Shorts</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main class="wrap">
+<header><div class="logo">CLIPX<span>AI</span></div><div class="tag">UNIVERSAL GAMING SHORTS STUDIO</div></header>
+<section class="hero"><p class="eyebrow">TURN LONG GAMEPLAY INTO SHORTS</p><h1>Find the moments.<br><span>Make them viral.</span></h1>
+<p class="muted">Upload gameplay you own or are authorized to edit. CLIPX scans the audio, selects candidate highlights and creates vertical clips.</p></section>
+<section class="panel">
+<form id="form">
+<label class="drop" for="video"><strong>Choose gameplay video</strong><span id="filename">MP4, MOV, MKV, WEBM · upload from your phone</span><input id="video" name="file" type="file" accept="video/*" required></label>
+<div class="controls"><label>Number of clips<select name="clips"><option>3</option><option>5</option><option>8</option><option>10</option></select></label>
+<label>Clip length<select name="duration"><option value="30">30 seconds</option><option value="45" selected>45 seconds</option><option value="60">60 seconds</option></select></label></div>
+<button id="go" type="submit">ANALYSE & CREATE SHORTS <b>→</b></button>
+</form><div id="status" class="status"></div><div id="results" class="results"></div>
+</section>
+<section class="notice"><b>Important:</b> The current prototype uses audio intensity as a rough highlight signal. It is not yet semantic AI: loud moments can be false positives, and quiet clutch moments may be missed. Review every clip before publishing.</section>
+<footer>CLIPX AI · V0.01 · Built for mobile browsers</footer>
+</main><script src="/static/app.js"></script></body></html>
